@@ -1,0 +1,51 @@
+.wifi-group-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.wifi-title {
+
+}
+
+.checkbox-wifi {
+
+}
+
+.checkbox-wifi label {
+    display: inline-block;
+    position: relative;
+    border-radius: .5em;
+    width: 2em;
+    height: .5em;
+    background-color: rgba(0, 0, 0, 0.26);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.checkbox-wifi label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -.3em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: #fafafa;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+.checkbox-wifi input {
+    display: none;
+}
+.checkbox-wifi input:checked + label {
+    background: rgba(0, 150, 136, 0.5);
+}
+.checkbox-wifi input:checked + label::before {
+    -webkit-transform: translateX(1em);
+    transform: translateX(1em);
+    background-color: #009688;
+}

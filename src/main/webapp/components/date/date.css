@@ -1,0 +1,16 @@
+.date-group-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-item {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-item:nth-child(1) {
+    margin-bottom: 8px;
+}

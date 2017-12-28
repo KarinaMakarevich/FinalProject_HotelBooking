@@ -1,0 +1,68 @@
+.slider-group-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-item {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-item .slider-item-title,
+.slider-item .slider-out {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item .slider-in {
+    width: 80%;
+    align-self: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* ===================================================================================================================
+    The Thumb
+   ===================================================================================================================*/
+
+.slider-item input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+.slider-item input[type=range]:focus {
+    outline: none;
+}
+
+.slider-item input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: -6px;
+    -webkit-transition: all 2.3s;
+    transition: all 2.3s;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+/* ===================================================================================================================
+    The Track
+   ===================================================================================================================*/
+
+.slider-item input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .5em;
+    cursor: pointer;
+    border-radius: .5em;
+    background-color: rgba(0, 0, 0, 0.26);
+}

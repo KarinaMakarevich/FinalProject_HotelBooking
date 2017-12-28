@@ -1,0 +1,329 @@
+html, button, input, select, textarea {
+    color: #222;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea, input {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    font-family: 'PT Sans', sans-serif;
+    color: #222222;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+/* ===================================================================================================================
+    Header
+   ===================================================================================================================*/
+
+.header {
+    height: 64px;
+    background-color: white;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+div nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.div nav ul li{
+    flex-direction: column;
+}
+
+.header nav ul li a,
+.div nav ul li a{
+    text-decoration: none;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav ul li {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===================================================================================================================
+    Content
+   ===================================================================================================================*/
+
+.content {
+    flex: 1 0 auto;
+    align-self: center;
+    margin-top: 8px;
+}
+
+.content aside {
+    margin-bottom: 8px;
+}
+
+.server-img {
+    width: 40%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ========================
+    Buttons
+   ========================*/
+
+.button {
+    padding: 12px 24px;
+    font-size: 1.05rem;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    -webkit-transition: box-shadow 150ms ease-in-out;
+    transition: box-shadow 150ms ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.change-language-button {
+    padding: 1px 5px;
+    font-size: 1rem;
+}
+
+.common-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.left-btn {
+    float: left;
+}
+
+.right-btn {
+    float: right;
+}
+
+.button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07), 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.find-room-button {
+    width: 100%;
+}
+
+.book-button {
+    width: 100%;
+}
+
+/* ========================
+    Cards
+   ========================*/
+
+.card {
+    padding: 12px 16px 16px 16px;
+    border-radius: 2px;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login-card,
+.register-card,
+.after-sign-up-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.login-card > .field > input,
+.register-card > .field > input,
+.register-card > .field > select > option{
+    padding: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+.register-card > .field > select{
+    width: 30%;
+}
+.login-card > .field > input {
+    width: 100%;
+}
+
+.login-card small {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 8px;
+}
+
+.login-card a {
+    text-decoration: none;
+}
+
+.login-card > .field,
+.register-card > .field,
+.after-sign-up-card > .field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.register-card > .field label.required:after {
+    color: red;
+    content: '*';
+    display: inline;
+}
+
+.invalid-date {
+    color: red;
+    margin-top: 8px;
+    display: none;
+}
+
+.wrong-info {
+    font-size: 0.7em;
+    color: red;
+}
+
+#hidden-field {
+    display: none;
+}
+
+#hidden-field-to-res-pass {
+    display: none;
+}
+
+/* ===================================================================================================================
+    Collection
+   ===================================================================================================================*/
+.collection {
+    padding: 0;
+}
+
+.collection-item .card {
+    padding: 0;
+}
+
+.collection-item .card .common-button {
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    margin-top: 1px;
+}
+
+.collection-item .card .common-button:hover,
+.collection-item .card .common-button:focus {
+    background-color: #80cbc4;
+    color: white;
+}
+
+.collection-item .card .common-button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07), 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+.inner-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-field > select {
+    padding: 12px;
+    width: 181px;
+}
+
+.inner-field > input {
+    padding: 12px;
+}
+/* ===================================================================================================================
+    Footer
+   ===================================================================================================================*/
+
+.footer {
+    height: 32px;
+    background-color: white;
+    box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.24), 0 -1px 1px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
